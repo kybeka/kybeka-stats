@@ -1,149 +1,53 @@
-<svg id="gh-dark-mode-only" width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+<svg id="gh-dark-mode-only" width="400" height="390" viewBox="0 0 400 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+<title id="title">Languages by file size</title>
 <style>
-svg {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-#background {
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-  fill: white;
-  stroke: rgb(225, 228, 232);
-  stroke-width: 1px;
-  rx: 6px;
-  ry: 6px;
-}
-
-#gh-dark-mode-only:target #background {
-  fill: #0d1117;
-  stroke-width: 0.5px;
-}
-
-foreignObject {
-  width: calc(100% - 10px - 32px);
-  height: calc(100% - 10px - 24px);
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.75em;
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(36, 41, 46);
-  fill: rgb(36, 41, 46);
-}
-
-#gh-dark-mode-only:target h2 {
-  color: #c9d1d9;
-  fill: #c9d1d9;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-li {
-  display: inline-flex;
-  font-size: 12px;
-  margin-right: 2ch;
-  align-items: center;
-  flex-wrap: nowrap;
-  transform: translateX(-500%);
-  animation: slideIn 2s ease-in-out forwards;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-  }
-}
-
-div.ellipsis {
-  height: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.octicon {
-  fill: rgb(88, 96, 105);
-  margin-right: 0.5ch;
-  vertical-align: top;
-}
-
-#gh-dark-mode-only:target .octicon {
-  color: #8b949e;
-  fill: #8b949e;
-}
-
-.progress {
-  display: flex;
-  height: 8px;
-  overflow: hidden;
-  background-color: rgb(225, 228, 232);
-  border-radius: 6px;
-  outline: 1px solid transparent;
-  margin-bottom: 1em;
-}
-
-#gh-dark-mode-only:target .progress {
-  background-color: rgba(110, 118, 129, 0.4);
-}
-
-.progress-item {
-  outline: 2px solid rgb(225, 228, 232);
-  border-collapse: collapse;
-}
-
-#gh-dark-mode-only:target .progress-item {
-  outline: 2px solid #393f47;
-}
-
-.lang {
-  font-weight: 600;
-  margin-right: 4px;
-  color: rgb(36, 41, 46);
-}
-
-#gh-dark-mode-only:target .lang {
-  color: #c9d1d9;
-}
-
-.percent {
-  color: rgb(88, 96, 105)
-}
-
-#gh-dark-mode-only:target .percent {
-  color: #8b949e;
-}
+svg{--paper:#fff9ef;--ink:#57414b;--muted:#7d606a;--rose:#aa5573;--edge:#ce9cab;--band:#f3d9df;--rule:#ebdce0;--shadow:#e8c7d1}
+#gh-dark-mode-only:target{--paper:#28222d;--ink:#f8e9e9;--muted:#cdb4c4;--rose:#f3adca;--edge:#8c647e;--band:#443044;--rule:#463748;--shadow:#17131c}
+.paper{fill:var(--paper);stroke:var(--edge)}
+.ink{fill:var(--ink)}
+.muted{fill:var(--muted)}
+.rose{fill:var(--rose)}
+.rule{stroke:var(--rule)}
+text{font-family:Verdana,sans-serif}
+.title{font-family:Georgia,serif;font-style:italic;font-size:25px}
+.pixel{font-family:'Courier New',monospace;font-size:11px}
+.value{font-family:'Courier New',monospace;font-size:19px;font-weight:bold;font-variant-numeric:tabular-nums}
 </style>
-<g>
-<rect x="5" y="5" id="background" />
-<g>
-<foreignObject x="21" y="17" width="318" height="176">
-<div xmlns="http://www.w3.org/1999/xhtml" class="ellipsis">
-
-<h2>Languages Used (By File Size)</h2>
-
-<div>
-<span class="progress">
-{{ progress }}
-</span>
-</div>
-
-<ul>
-
-{{ lang_list }}
-
-</ul>
-
+<defs>
+<pattern id="paper-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+<circle cx="1" cy="1" r="0.6" fill="var(--edge)" opacity="0.22"/>
+</pattern>
+<path id="spark" d="M6 0h3v6h6v3H9v6H6V9H0V6h6z"/>
+</defs>
+<rect x="12" y="12" width="380" height="370" rx="13" fill="var(--shadow)"/>
+<rect class="paper" x="5" y="5" width="380" height="370" rx="13"/>
+<rect x="6" y="6" width="378" height="368" rx="12" fill="url(#paper-dots)"/>
+<path d="M18 6h354q12 0 12 12v20H6V18Q6 6 18 6" fill="var(--band)"/>
+<path d="M6 38h378" stroke="var(--edge)"/>
+<g class="rose">
+<rect x="20" y="18" width="7" height="7"/>
+<rect x="33" y="18" width="7" height="7" opacity=".6"/>
+<rect x="46" y="18" width="7" height="7" opacity=".3"/>
+</g>
+<text x="368" y="26" text-anchor="end" class="pixel muted">kybeka / palette</text>
+<text x="25" y="79" class="title ink">a patchwork of languages</text>
+<text x="26" y="99" class="pixel muted">my code, by file size</text>
+<foreignObject x="25" y="113" width="340" height="222">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+.progress{display:flex;height:10px;overflow:hidden;border:1px solid var(--edge);border-radius:2px;margin-bottom:15px}
+.progress-item{min-width:0;opacity:.8}
+ul{display:grid;grid-template-columns:1fr 1fr;column-gap:12px;row-gap:3px;list-style:none;padding:0;margin:0}
+li{display:flex;align-items:center;min-width:0;height:11px;font:9px Verdana,sans-serif;color:var(--ink)}
+.octicon{width:6px;height:6px;flex-shrink:0;margin-right:5px}
+.lang{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.percent{margin-left:auto;padding-left:3px;font:9px 'Courier New',monospace;color:var(--muted);white-space:nowrap}
+</style>
+<div class="progress">{{ progress }}</div>
+<ul>{{ lang_list }}</ul>
 </div>
 </foreignObject>
-</g>
-</g>
+<path d="M24 346h342" stroke="var(--edge)" stroke-dasharray="2 4"/>
+<text x="25" y="363" class="pixel muted">a little work in progress</text>
+<use href="#spark" x="346" y="352" class="rose" transform="translate(106 107) scale(.7)"/>
 </svg>
