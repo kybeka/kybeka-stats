@@ -1,62 +1,33 @@
-<svg id="gh-dark-mode-only" width="400" height="390" viewBox="0 0 400 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+<svg id="gh-dark-mode-only" width="400" height="340" viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
 <title id="title">GitHub statistics</title>
 <style>
-svg{--paper:#fff9ef;--ink:#57414b;--muted:#7d606a;--rose:#aa5573;--edge:#ce9cab;--band:#f3d9df;--rule:#ebdce0;--shadow:#e8c7d1}
-#gh-dark-mode-only:target{--paper:#28222d;--ink:#f8e9e9;--muted:#cdb4c4;--rose:#f3adca;--edge:#8c647e;--band:#443044;--rule:#463748;--shadow:#17131c}
-.paper{fill:var(--paper);stroke:var(--edge)}
-.ink{fill:var(--ink)}
-.muted{fill:var(--muted)}
-.rose{fill:var(--rose)}
-.rule{stroke:var(--rule)}
-text{font-family:Verdana,sans-serif}
-.title{font-family:Georgia,serif;font-style:italic;font-size:25px}
-.pixel{font-family:'Courier New',monospace;font-size:11px}
-.value{font-family:'Courier New',monospace;font-size:19px;font-weight:bold;font-variant-numeric:tabular-nums}
+svg { --paper: #fcfafb; --ink: #39323c; --muted: #766e79; --accent: #a97793; --border: #ded5dd; --rule: #eee8ed; }
+#gh-dark-mode-only:target { --paper: #211e25; --ink: #eee7ed; --muted: #b5a9b9; --accent: #c399b5; --border: #4a3c4b; --rule: #352d39; }
+text { font-family: Arial, sans-serif; }
+.ink { fill: var(--ink); }
+.muted { fill: var(--muted); }
+.heading { font: 17px 'Courier New', monospace; letter-spacing: -.5px; }
+.value { font: 17px 'Courier New', monospace; font-variant-numeric: tabular-nums; }
 </style>
-<defs>
-<pattern id="paper-dots" width="12" height="12" patternUnits="userSpaceOnUse">
-<circle cx="1" cy="1" r="0.6" fill="var(--edge)" opacity="0.22"/>
-</pattern>
-<path id="spark" d="M6 0h3v6h6v3H9v6H6V9H0V6h6z"/>
-</defs>
-<rect x="12" y="12" width="380" height="370" rx="13" fill="var(--shadow)"/>
-<rect class="paper" x="5" y="5" width="380" height="370" rx="13"/>
-<rect x="6" y="6" width="378" height="368" rx="12" fill="url(#paper-dots)"/>
-<path d="M18 6h354q12 0 12 12v20H6V18Q6 6 18 6" fill="var(--band)"/>
-<path d="M6 38h378" stroke="var(--edge)"/>
-<g class="rose">
-<rect x="20" y="18" width="7" height="7"/>
-<rect x="33" y="18" width="7" height="7" opacity=".6"/>
-<rect x="46" y="18" width="7" height="7" opacity=".3"/>
-</g>
-<text x="368" y="26" text-anchor="end" class="pixel muted">kybeka / stats</text>
-<text x="25" y="79" class="title ink">a little code scrapbook</text>
-<text x="26" y="99" class="pixel muted">{{ name }}</text>
-<path class="rule" d="M25 140h340"/>
-<rect x="27" y="121" width="5" height="5" class="rose"/>
-<text x="43" y="128" font-size="11" class="muted">Stars</text>
-<text x="364" y="129" text-anchor="end" class="value ink">{{ stars }}</text>
-<path class="rule" d="M25 176h340"/>
-<rect x="27" y="157" width="5" height="5" class="rose"/>
-<text x="43" y="164" font-size="11" class="muted">Forks</text>
-<text x="364" y="165" text-anchor="end" class="value ink">{{ forks }}</text>
-<path class="rule" d="M25 212h340"/>
-<rect x="27" y="193" width="5" height="5" class="rose"/>
-<text x="43" y="200" font-size="11" class="muted">All-time contributions</text>
-<text x="364" y="201" text-anchor="end" class="value ink">{{ contributions }}</text>
-<path class="rule" d="M25 248h340"/>
-<rect x="27" y="229" width="5" height="5" class="rose"/>
-<text x="43" y="236" font-size="11" class="muted">Lines of code changed</text>
-<text x="364" y="237" text-anchor="end" class="value ink">{{ lines_changed }}</text>
-<path class="rule" d="M25 284h340"/>
-<rect x="27" y="265" width="5" height="5" class="rose"/>
-<text x="43" y="272" font-size="11" class="muted">Views · past two weeks</text>
-<text x="364" y="273" text-anchor="end" class="value ink">{{ views }}</text>
-<path class="rule" d="M25 320h340"/>
-<rect x="27" y="301" width="5" height="5" class="rose"/>
-<text x="43" y="308" font-size="11" class="muted">Repositories contributed to</text>
-<text x="364" y="309" text-anchor="end" class="value ink">{{ repos }}</text>
-<path d="M24 346h342" stroke="var(--edge)" stroke-dasharray="2 4"/>
-<text x="25" y="363" class="pixel muted">a little work in progress</text>
-<use href="#spark" x="346" y="352" class="rose" transform="translate(106 107) scale(.7)"/>
+<rect x="6" y="6" width="388" height="328" rx="6" fill="var(--paper)" stroke="var(--border)"/>
+<text x="26" y="43" class="heading ink">github stats</text>
+<text x="26" y="64" font-size="11" class="muted">{{ name }}</text>
+<path d="M359 28h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="var(--accent)"/>
+<text x="26" y="107" font-size="12" class="muted">Stars</text>
+<text x="374" y="108" text-anchor="end" class="value ink">{{ stars }}</text>
+<path d="M26 123h348" stroke="var(--rule)"/>
+<text x="26" y="146" font-size="12" class="muted">Forks</text>
+<text x="374" y="147" text-anchor="end" class="value ink">{{ forks }}</text>
+<path d="M26 162h348" stroke="var(--rule)"/>
+<text x="26" y="185" font-size="12" class="muted">All-time contributions</text>
+<text x="374" y="186" text-anchor="end" class="value ink">{{ contributions }}</text>
+<path d="M26 201h348" stroke="var(--rule)"/>
+<text x="26" y="224" font-size="12" class="muted">Lines of code changed</text>
+<text x="374" y="225" text-anchor="end" class="value ink">{{ lines_changed }}</text>
+<path d="M26 240h348" stroke="var(--rule)"/>
+<text x="26" y="263" font-size="12" class="muted">Views · past two weeks</text>
+<text x="374" y="264" text-anchor="end" class="value ink">{{ views }}</text>
+<path d="M26 279h348" stroke="var(--rule)"/>
+<text x="26" y="302" font-size="12" class="muted">Repositories contributed to</text>
+<text x="374" y="303" text-anchor="end" class="value ink">{{ repos }}</text>
 </svg>
