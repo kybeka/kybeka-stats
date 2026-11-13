@@ -6,8 +6,8 @@ svg { --paper: #fcfafb; --ink: #39323c; --muted: #766e79; --accent: #a97793; --b
 text { font-family: Arial, sans-serif; }
 .ink { fill: var(--ink); }
 .muted { fill: var(--muted); }
-.heading { font: 17px 'Courier New', monospace; letter-spacing: -.5px; }
-.value { font: 17px 'Courier New', monospace; font-variant-numeric: tabular-nums; }
+.heading { font: 600 17px Helvetica, Arial, sans-serif; }
+.value { font: 500 17px Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
 </style>
 <rect x="6" y="6" width="388" height="328" rx="6" fill="var(--paper)" stroke="var(--border)"/>
 <text x="26" y="43" class="heading ink">languages</text>
@@ -22,7 +22,7 @@ ul { display: grid; grid-template-columns: 1fr 1fr; column-gap: 14px; row-gap: 4
 li { display: flex; align-items: center; min-width: 0; height: 10px; font: 9px Arial, sans-serif; color: var(--ink); }
 .octicon { width: 5px; height: 5px; flex-shrink: 0; margin-right: 6px; }
 .lang { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.percent { margin-left: auto; padding-left: 3px; font: 9px 'Courier New', monospace; color: var(--muted); white-space: nowrap; }
+.percent { margin-left: auto; padding-left: 3px; font: 9px Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
 </style>
 <div class="progress">{{ progress }}</div>
 <ul>{{ lang_list }}</ul>

@@ -6,12 +6,11 @@ svg { --paper: #fcfafb; --ink: #39323c; --muted: #766e79; --accent: #a97793; --b
 text { font-family: Arial, sans-serif; }
 .ink { fill: var(--ink); }
 .muted { fill: var(--muted); }
-.heading { font: 17px 'Courier New', monospace; letter-spacing: -.5px; }
-.value { font: 17px 'Courier New', monospace; font-variant-numeric: tabular-nums; }
+.heading { font: 600 17px Helvetica, Arial, sans-serif; }
+.value { font: 500 17px Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
 </style>
 <rect x="6" y="6" width="388" height="328" rx="6" fill="var(--paper)" stroke="var(--border)"/>
-<text x="26" y="43" class="heading ink">github stats</text>
-<text x="26" y="64" font-size="11" class="muted">{{ name }}</text>
+<text x="26" y="52" class="heading ink">github stats</text>
 <path d="M359 28h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="var(--accent)"/>
 <text x="26" y="107" font-size="12" class="muted">Stars</text>
 <text x="374" y="108" text-anchor="end" class="value ink">{{ stars }}</text>
