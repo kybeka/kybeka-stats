@@ -14,7 +14,7 @@ text { font-family: 'DM Sans', sans-serif; }
 <text x="26" y="52" class="heading ink">github stats</text>
 <path d="M359 28h4v4h4v4h-4v4h-4v-4h-4v-4h4z" fill="var(--accent)"/>
 <text x="26" y="107" font-size="12" class="muted">Stars</text>
-<text x="374" y="108" text-anchor="end" class="value ink">16</text>
+<text x="374" y="108" text-anchor="end" class="value ink">18</text>
 <path d="M26 123h348" stroke="var(--rule)"/>
 <text x="26" y="146" font-size="12" class="muted">Forks</text>
 <text x="374" y="147" text-anchor="end" class="value ink">3</text>
@@ -26,7 +26,7 @@ text { font-family: 'DM Sans', sans-serif; }
 <text x="374" y="225" text-anchor="end" class="value ink">19,025,441</text>
 <path d="M26 240h348" stroke="var(--rule)"/>
 <text x="26" y="263" font-size="12" class="muted">Views · past two weeks</text>
-<text x="374" y="264" text-anchor="end" class="value ink">40</text>
+<text x="374" y="264" text-anchor="end" class="value ink">51</text>
 <path d="M26 279h348" stroke="var(--rule)"/>
 <text x="26" y="302" font-size="12" class="muted">Repositories contributed to</text>
 <text x="374" y="303" text-anchor="end" class="value ink">66</text>
